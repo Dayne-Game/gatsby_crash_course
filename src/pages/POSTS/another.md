@@ -1,5 +1,5 @@
 ---
-path: "posts/eight"
+path: "/posts-eight"
 title: "Wow hopefully this works"
 author: "Dayne Game"
 date: "24-05-2001"
