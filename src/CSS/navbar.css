@@ -1,0 +1,95 @@
+.navbar {
+  width: 100%;
+  height: 71px;
+  list-style-type: none;
+  padding-right: 15%;
+  padding-left: 15%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 1000;
+  background: rgb(71, 101, 200);
+}
+.link-box {
+  float: left;
+  line-height: 43px;
+  width: calc(100% - 60px);
+  margin: auto !important;
+}
+.signin {
+  float: right !important;
+}
+.link-box > a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+.link-box > a:hover {
+  background: #fbca12;
+  color: black;
+}
+.toggler {
+  display: none;
+  background: transparent;
+  border: none;
+  height: 50px;
+  width: 40px;
+  margin-top: 10.5px;
+  float: right !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 20px;
+  padding: 10px 0px;
+}
+
+.line {
+  width: 100%;
+  background: white;
+  height: 4px;
+  margin-bottom: 7px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 1419px) {
+  .link-box > a {
+    display: none;
+    background-color: #fbca12;
+    color: black;
+  }
+  .link-box > a:hover {
+    background-color:#243b90;
+    color: white;
+  }
+  .link-box.responsive {position: relative;}
+  .toggler {
+      display: block;
+    }
+    .link-box.responsive a {
+      display: block;
+      text-align: center;
+      width: 100%;
+      padding: 5px;
+      }
+    .link-box {
+        float: none;
+        margin-top: 71px !important;
+        width: 100%;
+        margin: 0px -5% !important; 
+        box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19) !important;
+    }
+    .navbar {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+  .navbar {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}

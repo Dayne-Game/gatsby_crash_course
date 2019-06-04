@@ -1,42 +1,52 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import { Link } from 'gatsby';
+import '../CSS/navbar.css';
+import Logo from '../images/logo.png';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `0rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+export default function Navbar() {
+  return (
+    <div className="navbar">
+      <Link to="/">
+        <div className="logo" style={LogoStyle}>
+          <img src={Logo} style={imgStyle} alt="Logo" />
+        </div>
+      </Link>
+      <div className="link-box" id="link-box">
+        <Link className="links" to="/news">NEWS</Link>
+        <Link className="links" to="/teams">TEAMS</Link>
+        <Link className="links" to="/results">RESULTS</Link>
+        <Link className="links" to="/hospitality">HOSPITALITY</Link>
+        <Link className="links" to="/contact">CONTACT US</Link>
+        <Link className="links" to="/faqs">FAQS</Link>
+        <Link className="links" to="/tickets">TICKETS</Link>
+        <Link className="links signin" to="/signin">SIGN IN</Link>
+      </div>
+      <button className="toggler" onClick={handleClick}>
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </button>
     </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+function handleClick(e) {
+  e.preventDefault();
+  var x = document.getElementById("link-box");
+  if (x.className === "link-box") {
+    x.className += " responsive";
+  } else {
+    x.className = "link-box";
+  }
 }
 
-export default Header
+const LogoStyle = {
+  height: '60px',
+  width: '60px',
+  float: 'Left',
+  marginTop: '5px'
+}
+
+const imgStyle = {
+  height: '60px'
+}

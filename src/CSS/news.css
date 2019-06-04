@@ -1,0 +1,107 @@
+.wrapper {
+    padding: 0px 15%;
+    padding-top: 71px;
+}
+.item-container {
+    height: auto;
+    width: 100%;
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-gap: 1em;
+    justify-self: center;
+    justify-items: center;
+}
+.news-card {
+    height: 300px;
+    width: 260px;
+    border-radius: 25px;
+    position: relative;
+    background: white;
+}
+.news-image {
+    width: 100%;
+    max-width: 260px;
+    min-width: 260px;
+    min-height: 210px;
+    max-height: 210px;
+    padding-bottom: 10px;
+    background: orange;
+}
+.news-text {
+    margin-top: 10px;
+    height: 80px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-bottom: 2px solid #bbb;
+    border-right: 2px solid #bbb;
+    border-left: 2px solid #bbb;
+    padding-left: 10px;
+}
+.red {
+    color: rgb(193, 11, 3);
+}
+.latest-news-banner, .more-news-banner {
+    width: 100%;
+    height: auto;
+    background: #fbca12;
+    padding: 20px 20px;
+    margin-top: 40px;
+    border-top-right-radius: 25px;
+}
+.latest-news-title {
+    font-size: 30pt;
+}
+.more-news-banner {
+    margin-top: 0px !important;
+    font-size: 25pt;
+    background: rgb(71, 101, 200);
+    color: white;
+}
+.more-news-title {
+    color: white;
+    text-decoration: none;
+    transition: transform .2s;
+}
+.more-news-title:hover {
+    color: #fbca12;
+}
+.more-news-title:hover > .icon {
+    color: #fbca12 !important;
+    transform: scale(1.1);
+}
+.icon {
+    font-size: 48px;
+    position: absolute;
+    margin-left: 10px;
+    color: red;
+}
+.card-hover {
+    transition: transform .2s;
+    text-decoration: none;
+    color: black;
+}
+.card-hover:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1500px) {
+  .wrapper {
+    padding: 20px 20px !important;
+    padding-top: 71px;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 1023px) {
+    .card-hover:last-child {
+    grid-column: 2 !important;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .wrapper {
+    padding: 20px 5% !important;
+    padding-top: 71px !important;
+  }
+}
