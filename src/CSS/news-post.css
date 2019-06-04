@@ -1,0 +1,39 @@
+.news-post-wrapper {
+    margin-top: 100px;
+    width: calc(100% - 10%);
+    margin: auto;
+}
+
+.news-post-header > p {
+    font-size: 11pt;
+}
+
+.news-post-text-box > p {
+    font-size: 13pt;
+}
+.news-post-header {
+    width: 100%;
+    height: auto;
+    background: gold;
+    padding: 20px 20px;
+    margin-top: 40px;
+    border-top-right-radius: 25px;
+}
+.news-post-text-box {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    color: #333;
+    background: rgb(245, 244, 240);
+    margin-bottom: 20px;
+}
+
+.news-post-header > h1 {
+    font-size: 25pt;
+}
+
+@media screen and (max-width: 1700px) {
+  .news-post-wrapper {
+    margin: 90px 5%;
+  }
+}
