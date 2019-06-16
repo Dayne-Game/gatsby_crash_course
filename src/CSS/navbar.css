@@ -67,6 +67,7 @@
   .link-box.responsive {position: relative;}
   .toggler {
       display: block;
+      margin-right: 5%;
     }
     .link-box.responsive a {
       display: block;
@@ -78,7 +79,7 @@
         float: none;
         margin-top: 71px !important;
         width: 100%;
-        margin: 0px -5% !important; 
+        margin: 0px -20% !important;
         box-shadow: 0 100px 100px 0 rgba(0, 0, 0, 0.2), 0 100px 100px 0 rgba(0, 0, 0, 0.19) !important;
     }
     .navbar {

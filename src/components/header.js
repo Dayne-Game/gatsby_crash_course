@@ -22,9 +22,9 @@ export default function Navbar() {
         <Link className="links signin" to="/signin">SIGN IN</Link>
       </div>
       <button className="toggler" onClick={handleClick}>
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
+        <div className="line line-1"></div>
+        <div className="line line-2"></div>
+        <div className="line line-3"></div>
       </button>
     </div>
   )
